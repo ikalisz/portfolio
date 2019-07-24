@@ -55,6 +55,7 @@ const HeaderBar = styled.header`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 10;
 `
 
 export default App;
