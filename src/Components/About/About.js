@@ -5,7 +5,7 @@ export default function About() {
     return (
         <AboutContainer>
             <MePhoto>
-                <ImageMe src={require('../../assests/plant default.gif')} />
+                <ImageMe src='https://via.placeholder.com/150' />
             </MePhoto>
             <AboutText></AboutText>
         </AboutContainer>

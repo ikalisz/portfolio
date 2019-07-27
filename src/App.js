@@ -1,16 +1,18 @@
 import React from 'react';
-import './App.css';
+import 'reset-css';
+import './App.css'
 import styled from 'styled-components'
-import {HashRouter} from 'react-router-dom'
 import routes from './routes'
+import {withRouter} from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faServer} from '@fortawesome/free-solid-svg-icons'
+import {faServer, faHome} from '@fortawesome/free-solid-svg-icons'
 
-function App() {
+function App(props) {
+  console.log(props)
   return (
-    <HashRouter>
       <AppContainer>
+        
         <HeaderBar>
           <IconSpan>
             <FontAwesomeIcon icon={faServer} size='4x'></FontAwesomeIcon>
@@ -23,9 +25,17 @@ function App() {
           {routes}
         </RouteContainer>
       </AppContainer>
-    </HashRouter>
   );
 }
+
+const HomeIcon = styled.div`
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+`
 
 const NameText = styled.p`
   font-size: 40px;
@@ -58,4 +68,4 @@ const HeaderBar = styled.header`
   z-index: 10;
 `
 
-export default App;
+export default withRouter(App);
