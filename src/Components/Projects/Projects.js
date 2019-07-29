@@ -7,7 +7,7 @@ export default function ProjectsPage(props) {
     return (
         <ProjectContainer>
             <HomeIcon>
-                <FontAwesomeIcon icon={faHome} size='4x' />
+                <FontAwesomeIcon icon={faHome} size='2x' />
             </HomeIcon>
             <QuickFix id='quickFix' onClick={e => props.history.push('/projects/quick')}>
                 <QuickFixText>Quick Fix</QuickFixText>
@@ -15,6 +15,7 @@ export default function ProjectsPage(props) {
                 <QuickFixImage src='https://i.gyazo.com/8a14f2076e10da1be3d4a766e4aa9c0d.png' alt='' />
             </QuickFix>
             <AllThink id='allThink'>
+                <AllThinkText>All Think</AllThinkText>
                 <AllThinkImage src='https://i.gyazo.com/c022dd2d7bf58d2eb1f47a9c75d65871.png' alt='' />
             </AllThink>
         </ProjectContainer>
@@ -28,6 +29,8 @@ const HomeIcon = styled.div`
   top: 30px;
   right: 30px;
   color: white;
+  z-index: 10;
+  padding: 5px;
 `
 
 const QuickFixText = styled.h1`
@@ -36,6 +39,18 @@ const QuickFixText = styled.h1`
     top: 20px;
     font-size: 40px;
     color: white;
+    font-weight: bold;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const AllThinkText = styled.h1`
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    font-size: 40px;
     font-weight: bold;
     background: transparent;
     display: flex;

@@ -1,0 +1,4 @@
+#firstLine {
+    transition: transform 300ms ease-in-out;
+    transform: translateY(-5px) rotate(45deg)
+}

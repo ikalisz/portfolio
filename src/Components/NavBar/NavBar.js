@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+import Menu from '../Menu/Menu'
 
 export default function NavBar() {
     return (
         <NavBarContainer>
-            <Link to='/'><LinkText>Home</LinkText></Link>
-            <Link to='/about'><LinkText>About</LinkText></Link>
+            <Menu />
         </NavBarContainer>
     )
 }
