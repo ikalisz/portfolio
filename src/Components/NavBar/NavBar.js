@@ -6,7 +6,7 @@ import Menu from '../Menu/Menu'
 export default function NavBar() {
     return (
         <NavBarContainer>
-            <Menu />
+            <Link to='/'><LinkText>Home</LinkText></Link>
         </NavBarContainer>
     )
 }

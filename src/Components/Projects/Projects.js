@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import {faHome} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {withRouter} from 'react-router-dom'
 
-export default function ProjectsPage(props) {
+function ProjectsPage(props) {
     return (
         <ProjectContainer>
-            <HomeIcon>
+            <HomeIcon onClick={e => props.history.push('/')} >
                 <FontAwesomeIcon icon={faHome} size='2x' />
             </HomeIcon>
             <QuickFix id='quickFix' onClick={e => props.history.push('/projects/quick')}>
@@ -22,6 +23,8 @@ export default function ProjectsPage(props) {
     )
 }
 
+export default withRouter(ProjectsPage)
+
 const HomeIcon = styled.div`
   border-radius: 50%;
   background: black;
@@ -30,7 +33,14 @@ const HomeIcon = styled.div`
   right: 30px;
   color: white;
   z-index: 10;
-  padding: 5px;
+  padding: 9px;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+  :hover {
+      cursor: pointer;
+      transition: transform 300ms ease-in-out;
+      transform: scale(1.2);
+  }
 `
 
 const QuickFixText = styled.h1`
