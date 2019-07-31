@@ -7,7 +7,9 @@ export default function About() {
             <MePhoto>
                 <ImageMe src='https://via.placeholder.com/150' />
             </MePhoto>
-            <AboutText></AboutText>
+            <AboutText>
+                Born in raised in Colorado. I have always had a passion for problem solving, puzzles, and technology. I found my love for programming at DevMountain and have followed that passion ever since. When I'm not programming I'm usually enjoying music or working on my car.
+            </AboutText>
         </AboutContainer>
     )
 }
@@ -39,7 +41,14 @@ const ImageMe = styled.img`
 `
 
 const AboutText = styled.p`
-    height: 40%;
-    width: 80%;
-    background: green;
+    height: 10%;
+    width: 40%;
+    color: white;
+    background: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 `

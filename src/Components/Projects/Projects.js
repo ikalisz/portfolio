@@ -7,9 +7,6 @@ import {withRouter} from 'react-router-dom'
 function ProjectsPage(props) {
     return (
         <ProjectContainer>
-            <HomeIcon onClick={e => props.history.push('/')} >
-                <FontAwesomeIcon icon={faHome} size='2x' />
-            </HomeIcon>
             <QuickFix id='quickFix' onClick={e => props.history.push('/projects/quick')}>
                 <QuickFixText>Quick Fix</QuickFixText>
                 <QuickFixImage src="https://i.gyazo.com/a22ebc888cc30b36ce47e40d6f966e94.jpg" alt='' />

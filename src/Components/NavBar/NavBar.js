@@ -7,17 +7,29 @@ export default function NavBar() {
     return (
         <NavBarContainer>
             <Link to='/'><LinkText>Home</LinkText></Link>
+            <LineDiv />
+            <Link to='/projects'><LinkText>Projects</LinkText></Link>
+            <LineDiv />
+            <Link to='/about'><LinkText>About</LinkText></Link>
+            <LineDiv />
+            <Link to='/contact' ><LinkText>Contact</LinkText></Link>
         </NavBarContainer>
     )
 }
 
 const NavBarContainer = styled.nav`
-    height: 70%;
+    height: 60%;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+`
+
+const LineDiv = styled.div`
+    height: 1px;
+    width: 80%;
+    background: #777;
 `
 
 const LinkText = styled.button`

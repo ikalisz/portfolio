@@ -6,7 +6,7 @@ import routes from './routes'
 import {withRouter} from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faServer, faHome} from '@fortawesome/free-solid-svg-icons'
+import {faServer, faHome, faCode} from '@fortawesome/free-solid-svg-icons'
 
 function App(props) {
   console.log(props)
@@ -14,8 +14,8 @@ function App(props) {
       <AppContainer>
         
         <HeaderBar>
-          <IconSpan>
-            <FontAwesomeIcon icon={faServer} size='4x'></FontAwesomeIcon>
+          <IconSpan onClick={e => props.history.push('/')}>
+            <FontAwesomeIcon icon={faCode} size='4x'></FontAwesomeIcon>
           </IconSpan>
           <NameText>Ian K</NameText>
           <NavBar></NavBar>
@@ -44,6 +44,9 @@ const NameText = styled.p`
 
 const IconSpan = styled.span`
   color: white;
+  :hover {
+    cursor: pointer;
+  }
 `
 
 const RouteContainer = styled.main`
