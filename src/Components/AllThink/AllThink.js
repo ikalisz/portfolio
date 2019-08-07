@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import * as Icon from 'react-feather'
 
-export default function QuickFix() {
+export default function AllThink() {
     return (
         <Container>
             <HeroImage />
             <TextButtonHolder>
                 <InfoText>
-                    Quick Fix is a web application that was built with the PERN stack. It allows for clients to have a better customer experience when taking their car to the mechanics for a repair. This is done through the process of twilio text updates and allowing the mechanic to take in repairs with the click of a button rather than having to spend time on the phone and front desk.
+                    All Think is a web application that companies can use to improve employee communication to remote employees. This is done through a virtual whiteboard that is synced through all clients. It also has a chatroom for employees to communicate. All Think was built with the PERN stack as well as with sockets and a canvas element.
                 </InfoText>
                 <ProjectButtonHolder>
                     <LinkProject target='_blank'>

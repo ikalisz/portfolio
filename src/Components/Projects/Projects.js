@@ -12,7 +12,7 @@ function ProjectsPage(props) {
                 <QuickFixImage src="https://i.gyazo.com/a22ebc888cc30b36ce47e40d6f966e94.jpg" alt='' />
                 <QuickFixImage src='https://i.gyazo.com/8a14f2076e10da1be3d4a766e4aa9c0d.png' alt='' />
             </QuickFix>
-            <AllThink id='allThink'>
+            <AllThink id='allThink' onClick={e => props.history.push('/projects/think')}>
                 <AllThinkText>All Think</AllThinkText>
                 <AllThinkImage src='https://i.gyazo.com/c022dd2d7bf58d2eb1f47a9c75d65871.png' alt='' />
             </AllThink>
