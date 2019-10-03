@@ -5,7 +5,7 @@ import * as Icon from 'react-feather'
 export default function QuickFix() {
     return (
         <Container>
-            <HeroImage />
+            <HeroImage src={require('../../assests/QuickLogo.png')} />
             <TextButtonHolder>
                 <InfoText>
                     Quick Fix is a web application that was built with the PERN stack. It allows for clients to have a better customer experience when taking their car to the mechanics for a repair. This is done through the process of twilio text updates and allowing the mechanic to take in repairs with the click of a button rather than having to spend time on the phone and front desk.
@@ -36,18 +36,16 @@ const Container = styled.div`
 `
 
 const HeroImage = styled.img`
-    background: indianred;
-    height: 300px;
-    width: 400px;
+height: 200px;
 `
 
 const InfoText = styled.p`
-    width: 70%;
+    width: 80%;
     color: white;
 `
 
 const ProjectButtonHolder = styled.div`
-    height: 10%;
+    height: 20%;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -56,8 +54,8 @@ const ProjectButtonHolder = styled.div`
 `
 
 const TextButtonHolder = styled.div`
-    height: 40%;
-    width: 50%;
+    height: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

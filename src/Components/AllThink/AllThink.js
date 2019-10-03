@@ -5,17 +5,17 @@ import * as Icon from 'react-feather'
 export default function AllThink() {
     return (
         <Container>
-            <HeroImage />
+            <HeroImage src={require('../../assests/AllThinkLogo.png')} />
             <TextButtonHolder>
                 <InfoText>
                     All Think is a web application that companies can use to improve employee communication to remote employees. This is done through a virtual whiteboard that is synced through all clients. It also has a chatroom for employees to communicate. All Think was built with the PERN stack as well as with sockets and a canvas element.
                 </InfoText>
                 <ProjectButtonHolder>
-                    <LinkProject target='_blank'>
+                    <LinkProject target='_blank' href='https://github.com/collab-suite/collab-suite'>
                         <Icon.ArrowRightCircle color='white' />
                         <LinkTextProject>Github Repo</LinkTextProject>
                     </LinkProject>
-                    <LinkProject target='_blank' href='https://quick-fix.net' >
+                    <LinkProject target='_blank' href='http://allthink.info/#/' >
                         <Icon.ArrowRightCircle color='white' />
                         <LinkTextProject>Live Site</LinkTextProject>
                     </LinkProject>
@@ -36,18 +36,16 @@ const Container = styled.div`
 `
 
 const HeroImage = styled.img`
-    background: indianred;
-    height: 300px;
-    width: 400px;
+height: 300px;
 `
 
 const InfoText = styled.p`
-    width: 70%;
+    width: 80%;
     color: white;
 `
 
 const ProjectButtonHolder = styled.div`
-    height: 10%;
+    height: 20%;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -56,8 +54,8 @@ const ProjectButtonHolder = styled.div`
 `
 
 const TextButtonHolder = styled.div`
-    height: 40%;
-    width: 50%;
+    height: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -11,15 +11,13 @@ export default function NavBar() {
             <Link to='/projects'><LinkText>Projects</LinkText></Link>
             <LineDiv />
             <Link to='/about'><LinkText>About</LinkText></Link>
-            <LineDiv />
-            <Link to='/contact' ><LinkText>Contact</LinkText></Link>
         </NavBarContainer>
     )
 }
 
 const NavBarContainer = styled.nav`
-    height: 60%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
