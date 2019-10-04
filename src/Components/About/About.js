@@ -59,7 +59,8 @@ const MePhoto = styled.div`
 `
 
 const ImageMe = styled.img`
-    transform: translateY(55px) scale(.07) ;
+    transform: translateY(55px);
+    height: 300px;
 `
 
 const AboutText = styled.p`
