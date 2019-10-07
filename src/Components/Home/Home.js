@@ -161,6 +161,7 @@ const ProjectImage = styled.img`
     z-index: 0;
     object-fit: cover;
     width: 100%;
+    transform: scale(1.2);
 `
 
 const ProjectText = styled.h4`
