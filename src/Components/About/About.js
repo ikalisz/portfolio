@@ -51,7 +51,6 @@ const AboutContainer = styled.div`
 const MePhoto = styled.div`
     height: 250px;
     width: 250px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

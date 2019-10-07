@@ -5,7 +5,6 @@ export default function Home(props) {
     return (
         <HomeContainer>
             <AboutMe onClick={e => props.history.push('/about')} >
-                <AboutMeImage src={require('../../assests/tsx.jpg')} alt='' />
                 <AboutMeImage src={require('../../assests/rockwall3.jpg')} alt='' />
                 <ProjectText>About/Contact</ProjectText>
             </AboutMe>
