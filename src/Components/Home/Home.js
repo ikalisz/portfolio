@@ -151,6 +151,7 @@ const Projects = styled.div`
 
 const AboutMeImage = styled.img`
     z-index: 0;
+    object-fit: cover;
 `
 
 const AboutMeImage2 = styled.img`
@@ -159,6 +160,7 @@ const AboutMeImage2 = styled.img`
 
 const ProjectImage = styled.img`
     z-index: 0;
+    object-fit: cover;
 `
 
 const ProjectText = styled.h4`
