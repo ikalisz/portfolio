@@ -29,7 +29,6 @@ const HomeContainer = styled.div`
 const AboutMe = styled.div`
 height: 50%;
 width: 100%;
-background: limegreen;
 position: relative;
 display: flex;
 justify-content: space-evenly;
@@ -108,7 +107,6 @@ const ContactMe = styled.div`
 const Projects = styled.div`
     height: 50%;
     width: 100%;
-    background: limegreen;
     position: relative;
     display: flex;
     justify-content: center;
@@ -152,6 +150,7 @@ const Projects = styled.div`
 const AboutMeImage = styled.img`
     z-index: 0;
     object-fit: cover;
+    width: 100%;
 `
 
 const AboutMeImage2 = styled.img`
@@ -161,6 +160,7 @@ const AboutMeImage2 = styled.img`
 const ProjectImage = styled.img`
     z-index: 0;
     object-fit: cover;
+    width: 100%;
 `
 
 const ProjectText = styled.h4`
