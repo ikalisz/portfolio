@@ -11,7 +11,7 @@ export default function About() {
             <AboutText>
                 Hello I'm Ian, I was born and raised in Colorado. Ever since I was a kid I've loved solving puzzles like sudoku and rubiks cubes. I have an entire collection of rubiks cubes to this day. I also fell in love with cars when I was 16 and got my first car. I continue to go to car shows weekly. I also love listening and talking about music. I have taken several music appreciation classes and almost made a career out of it until I found my love for programming. I have recently picked up rock climbing and have since fallen in love with it. The feeling of reaching the top and succeeding a hard route is a blissful feeling that you reach everytime you go. Below is my contact information, my phone is the easiest and fastest way to reach me. I hope to hear from you soon!
             </AboutText>
-            <InnerBox style={{'width':'25%'}}>
+            <SkillsList>
                 <InfoText>
                     Skills      
                 </InfoText>
@@ -39,7 +39,7 @@ export default function About() {
                 <InfoText>
                     Socket.io
                 </InfoText>
-            </InnerBox>
+            </SkillsList>
             <InnerBox>
                 <InfoHolder>
                     <Icon.Phone color='white' />
@@ -133,4 +133,11 @@ const GithubLinkedin = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+`
+
+const SkillsList = styled(InnerBox)`
+    width: 25%;
+    @media(max-height: 1000px) {
+        overflow: scroll;
+    }
 `
