@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import * as Icon from 'react-feather'
 
+
 export default function Contact() {
     return (
         <ContactContainer>

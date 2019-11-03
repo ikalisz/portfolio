@@ -6,7 +6,7 @@ export default function Home(props) {
         <HomeContainer>
             <AboutMe onClick={e => props.history.push('/about')} >
                 <AboutMeImage src={require('../../assests/rockwall3.jpg')} alt='' />
-                <ProjectText style={{color: 'black'}}>About/Contact</ProjectText>
+                <AboutText>About/Contact</AboutText>
             </AboutMe>
             <Projects onClick={e => props.history.push('/projects')} >
                 <ProjectImage src={require('../../assests/codeportfolio2.PNG')} alt='' />
@@ -69,41 +69,6 @@ align-items: center;
 }
 `
 
-const ContactMe = styled.div`
-    height: 100%;
-    width: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    ::before {
-        content:'';
-        position: absolute;
-        background: #888;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-    >img {
-        transition: 250ms ease-in-out;
-        transform: scale(1)
-    }
-    :hover:before {
-        transition: 200ms linear;
-        opacity: 0.3;
-        cursor: pointer;
-    }
-
-    :hover img {
-        transition: 250ms ease-in-out;
-        transform: scale(1.05)
-    }
-`
-
 const Projects = styled.div`
     height: 50%;
     width: 100%;
@@ -153,10 +118,6 @@ const AboutMeImage = styled.img`
     width: 100%;
 `
 
-const AboutMeImage2 = styled.img`
-    z-index: 0;
-`
-
 const ProjectImage = styled.img`
     z-index: 0;
     object-fit: cover;
@@ -164,7 +125,7 @@ const ProjectImage = styled.img`
     transform: scale(1.2);
 `
 
-const ProjectText = styled.h4`
+const BasicText = styled.h4`
     position: absolute;
     color: white;
     font-size: 40px;
@@ -174,12 +135,20 @@ const ProjectText = styled.h4`
     justify-content: center;
     align-items: center;
 `
-const AboutText = styled.h4`
-    position: absolute;
-    font-size: 40px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+const ProjectText = styled(BasicText)`
+    padding: 23px 80px 30px 80px;
+    background: #111;
+    border-radius: 5px;
+    height: 0px;
+    width: 0px;
+`
+
+const AboutText = styled(BasicText)`
+    padding: 20px 140px;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    height: 0px;
+    width: 0px;
 `

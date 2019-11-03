@@ -84,6 +84,9 @@ const MePhoto = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    @media(max-height: 1000px) {
+        transform: scale(.7)
+    }
 `
 
 const ImageMe = styled.img`
