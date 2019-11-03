@@ -6,7 +6,7 @@ export default function Home(props) {
         <HomeContainer>
             <AboutMe onClick={e => props.history.push('/about')} >
                 <AboutMeImage src={require('../../assests/rockwall3.jpg')} alt='' />
-                <ProjectText>About/Contact</ProjectText>
+                <ProjectText style={{color: 'black'}}>About/Contact</ProjectText>
             </AboutMe>
             <Projects onClick={e => props.history.push('/projects')} >
                 <ProjectImage src={require('../../assests/codeportfolio2.PNG')} alt='' />
