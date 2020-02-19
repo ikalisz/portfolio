@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
 export default function NavBar() {
+<<<<<<< HEAD
     return (
         <NavBarContainer>
             <Link to='/'><LinkText>Home</LinkText></Link>
@@ -12,6 +13,21 @@ export default function NavBar() {
             <Link to='/about'><LinkText>About</LinkText></Link>
         </NavBarContainer>
     )
+=======
+  return (
+    <NavBarContainer>
+      <Link to='/'><LinkText>Home</LinkText></Link>
+      <LineDiv />
+      <Link to='/projects'><LinkText
+      style={{
+        margin: '5 0',
+      }}
+      >Projects</LinkText></Link>
+      <LineDiv />
+      <Link to='/about'><LinkText>About</LinkText></Link>
+    </NavBarContainer>
+  )
+>>>>>>> started mobile styling
 }
 
 const NavBarContainer = styled.nav`
@@ -24,9 +40,17 @@ const NavBarContainer = styled.nav`
 `
 
 const LineDiv = styled.div`
+<<<<<<< HEAD
     height: 1px;
     width: 80%;
     background: #777;
+=======
+  @media (min-width: 1000px) {
+    height: 1px;
+    width: 80%;
+    background: #777;
+  }
+>>>>>>> started mobile styling
 `
 
 const LinkText = styled.button`
@@ -51,5 +75,3 @@ const LinkText = styled.button`
         width: 100%;
     }
 `
-
-

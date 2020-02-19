@@ -17,11 +17,14 @@ export default function Home(props) {
 }
 
 const HomeContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #555;
   display: flex;
   flex-direction: column;
+  @media (min-width: 1000px) {
+    height: 100vh;
+  }
 `
 
 
@@ -119,9 +122,12 @@ const AboutMeImage = styled.img`
 
 const ProjectImage = styled.img`
   z-index: 0;
-  object-fit: cover;
-  width: 100%;
-  transform: scale(1.2);
+  height: 100%;
+  @media (min-width: 1000px) {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+  }
 `
 
 const BasicText = styled.h4`
