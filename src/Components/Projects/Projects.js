@@ -80,9 +80,7 @@ const ProjectContainer = styled.main`
     align-items: center;
 `
 
-const AllThinkImage = styled.img`
-
-`
+const AllThinkImage = styled.img``
 
 const QuickFixImage = styled.img`
     height: 53%

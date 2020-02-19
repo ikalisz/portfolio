@@ -8,7 +8,11 @@ export default function NavBar() {
     <NavBarContainer>
       <Link to='/'><LinkText>Home</LinkText></Link>
       <LineDiv />
-      <Link to='/projects'><LinkText>Projects</LinkText></Link>
+      <Link to='/projects'><LinkText
+      style={{
+        margin: '5 0',
+      }}
+      >Projects</LinkText></Link>
       <LineDiv />
       <Link to='/about'><LinkText>About</LinkText></Link>
     </NavBarContainer>
@@ -25,9 +29,11 @@ const NavBarContainer = styled.nav`
 `
 
 const LineDiv = styled.div`
-  height: 1px;
-  width: 80%;
-  background: #777;
+  @media (min-width: 1000px) {
+    height: 1px;
+    width: 80%;
+    background: #777;
+  }
 `
 
 const LinkText = styled.button`
@@ -52,5 +58,3 @@ const LinkText = styled.button`
     width: 100%;
   }
 `
-
-
