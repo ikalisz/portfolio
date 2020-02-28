@@ -11,12 +11,11 @@ export default function QuickFix() {
                     Quick Fix is a web application that was built with the PERN stack. It allows for clients to have a better customer experience when taking their car to the mechanics for a repair. This is done through the process of twilio text updates and allowing the mechanic to take in repairs with the click of a button rather than having to spend time on the phone and front desk.
                 </InfoText>
                 <ProjectButtonHolder>
-                    <LinkProject target='_blank' href='https://github.com/ikalisz/personal-project'>
+                    <LinkProject target='_blank' rel="noopener noreferrer" href='https://github.com/ikalisz/personal-project'>
                         <Icon.ArrowRightCircle color='white' />
                         <LinkTextProject>Github Repo</LinkTextProject>
                     </LinkProject>
-                    <LinkProject target='_blank' href='https://quick-fix.net' >
-                        <Icon.ArrowRightCircle color='white' />
+                    <LinkProject target='_blank' rel="noopener noreferrer" href='https://quick-fix.net' >
                         <LinkTextProject>Live Site</LinkTextProject>
                     </LinkProject>
                 </ProjectButtonHolder>
@@ -54,7 +53,8 @@ const ProjectButtonHolder = styled.div`
 `
 
 const TextButtonHolder = styled.div`
-    height: 30%;
+    padding-vertical: 10px;
+    min-height: 30%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -79,4 +79,6 @@ const LinkProject = styled.a`
     :hover {
         opacity: 0.9
     }
+    border: 1px white solid;
+    border-radius: 2px;
 `

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import * as Icon from 'react-feather'
+import {Avatar} from '@material-ui/core'
 
 export default function About() {
     return (
@@ -8,6 +9,9 @@ export default function About() {
             <MePhoto>
                 <ImageMe src={require('../../assests/image1.jpg')} />
             </MePhoto>
+            <MeAvatar>
+                <Avatar src={require('../../assests/image1.jpg')} />
+            </MeAvatar>
             <AboutText>
                 Hello I'm Ian, I was born and raised in Colorado. Ever since I was a kid I've loved solving puzzles like sudoku and rubiks cubes. I have an entire collection of rubiks cubes to this day. I also fell in love with cars when I was 16 and got my first car. I continue to go to car shows weekly. I also love listening and talking about music. I have taken several music appreciation classes and almost made a career out of it until I found my love for programming. I have recently picked up rock climbing and have since fallen in love with it. The feeling of reaching the top and succeeding a hard route is a blissful feeling that you reach everytime you go. Below is my contact information, my phone is the easiest and fastest way to reach me. I hope to hear from you soon!
             </AboutText>
@@ -54,10 +58,10 @@ export default function About() {
                     </InfoText>
                 </InfoHolder>
                 <GithubLinkedin>
-                    <a target='_blank' href='https://www.linkedin.com/in/ikalisz/'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/ikalisz/'>
                         <Icon.Linkedin color='white' />
                     </a>
-                    <a target='_blank' href='https://github.com/ikalisz'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://github.com/ikalisz'>
                         <Icon.GitHub color='white' />
                     </a>
                 </GithubLinkedin>
@@ -77,6 +81,12 @@ const AboutContainer = styled.div`
     align-items: center;
 `
 
+const MeAvatar = styled.div`
+    @media(min-width: 1000px) {
+        display: none;
+    }
+`
+
 const MePhoto = styled.div`
     height: 250px;
     width: 250px;
@@ -84,8 +94,8 @@ const MePhoto = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    @media(max-height: 1000px) {
-        transform: scale(.7)
+    @media(max-width: 1000px) {
+        display: none;
     }
 `
 

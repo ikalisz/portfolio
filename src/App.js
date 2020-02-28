@@ -6,7 +6,7 @@ import routes from './routes'
 import {withRouter} from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faServer, faHome, faCode} from '@fortawesome/free-solid-svg-icons'
+import {faCode} from '@fortawesome/free-solid-svg-icons'
 
 function App(props) {
   console.log(props)
@@ -27,15 +27,6 @@ function App(props) {
       </AppContainer>
   );
 }
-
-const HomeIcon = styled.div`
-  border-radius: 50%;
-  background: black;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: white;
-`
 
 const NameText = styled.p`
   font-size: 40px;
