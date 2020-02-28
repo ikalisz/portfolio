@@ -115,7 +115,7 @@ const AboutText = styled.p`
 
 const InnerBox = styled.div`
   min-height: 25%;
-  width: 30%;
+  min-width: 30%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -123,11 +123,12 @@ const InnerBox = styled.div`
   background: #666;
   border-radius: 10px;
   margin-bottom: 75px;
+  padding: 0 8px;
 `
 
 const InfoHolder = styled.div`
   height: 10%;
-  width: 55%;
+  min-width: 55%;
   display: flex;
   align-items: center;
   justify-content: center;

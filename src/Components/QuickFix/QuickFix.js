@@ -36,7 +36,7 @@ const Container = styled.div`
 `
 
 const HeroImage = styled.img`
-height: 200px;
+    max-width: 80%;
 `
 
 const InfoText = styled.p`
