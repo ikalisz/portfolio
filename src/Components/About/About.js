@@ -62,10 +62,10 @@ export default function About() {
           </InfoText>
         </InfoHolder>
         <GithubLinkedin>
-          <a target='_blank' href='https://www.linkedin.com/in/ikalisz/'>
+          <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/ikalisz/'>
             <Icon.Linkedin color='white' />
           </a>
-          <a target='_blank' href='https://github.com/ikalisz'>
+          <a target='_blank' rel="noopener noreferrer" href='https://github.com/ikalisz'>
             <Icon.GitHub color='white' />
           </a>
         </GithubLinkedin>
