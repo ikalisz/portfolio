@@ -10,22 +10,6 @@ import {faCode} from '@fortawesome/free-solid-svg-icons'
 
 function App(props) {
   return (
-<<<<<<< HEAD
-      <AppContainer>
-        
-        <HeaderBar>
-          <IconSpan onClick={e => props.history.push('/')}>
-            <FontAwesomeIcon icon={faCode} size='4x'></FontAwesomeIcon>
-          </IconSpan>
-          <NameText>Ian K</NameText>
-          <NavBar></NavBar>
-
-        </HeaderBar>
-        <RouteContainer>
-          {routes}
-        </RouteContainer>
-      </AppContainer>
-=======
     <AppContainer>
       <HeaderBar>
         <IconSpan onClick={e => props.history.push('/')}>
@@ -38,7 +22,6 @@ function App(props) {
         {routes}
       </RouteContainer>
     </AppContainer>
->>>>>>> started mobile styling
   );
 }
 
@@ -56,10 +39,6 @@ const IconSpan = styled.span`
 `
 
 const RouteContainer = styled.main`
-<<<<<<< HEAD
-  height: 100vh;
-  width: 80%;
-=======
   height: 80%;
   width: 100%;
   @media (min-width: 1000px) {
@@ -68,7 +47,6 @@ const RouteContainer = styled.main`
     position: absolute;
     right: 0px;
   }
->>>>>>> started mobile styling
 `
 
 const AppContainer = styled.div`
@@ -88,11 +66,6 @@ const HeaderBar = styled.header`
   width: 100%;
   background: #222;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-  justify-content: space-evenly;
-=======
->>>>>>> started mobile styling
   align-items: center;
   justify-content: space-evenly;
   @media (min-width: 1000px) {
