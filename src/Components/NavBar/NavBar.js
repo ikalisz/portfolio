@@ -19,12 +19,12 @@ export default function NavBar() {
 }
 
 const NavBarContainer = styled.nav`
-    height: 50%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 `
 
 const LineDiv = styled.div`
@@ -36,24 +36,24 @@ const LineDiv = styled.div`
 `
 
 const LinkText = styled.button`
-    color: white;
-    outline: none;
-    background: #111;
-    position: relative;
-    border: solid 1px;
-    z-index: 2;
-    ::before {
-        content: '';
-        background: #888;
-        width: 0%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        transition: 200ms linear;
-        z-index: -1;
-    }
-    :hover:before {
-        width: 100%;
-    }
+  color: white;
+  outline: none;
+  background: #111;
+  position: relative;
+  border: solid 1px;
+  z-index: 2;
+  ::before {
+    content: '';
+    background: #888;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 200ms linear;
+    z-index: -1;
+  }
+  :hover:before {
+    width: 100%;
+  }
 `

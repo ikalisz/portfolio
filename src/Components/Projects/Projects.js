@@ -22,7 +22,6 @@ export default withRouter(ProjectsPage)
 
 const QuickFixText = styled.h1`
     position: absolute;
-    width: 100%;
     top: 20px;
     font-size: 40px;
     color: white;
@@ -31,11 +30,15 @@ const QuickFixText = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px 8px;
+    border: 3px solid;
+    border-color: #fff;
+    border-radius: 5px;
+    background-color: #111;
 `
 
 const AllThinkText = styled.h1`
     position: absolute;
-    width: 100%;
     top: 20px;
     font-size: 40px;
     font-weight: bold;
@@ -43,6 +46,11 @@ const AllThinkText = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px 8px;
+    border: 3px solid;
+    border-color: #111;
+    border-radius: 5px;
+    background-color: #fff;
 `
 
 const ProjectContainer = styled.main`
