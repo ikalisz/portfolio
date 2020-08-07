@@ -11,10 +11,14 @@ export default function AllThink() {
                 </InfoText>
                 <ProjectButtonHolder>
                     <LinkProject target='_blank' rel="noopener noreferrer" href='https://github.com/collab-suite/collab-suite'>
-                        <LinkTextProject>Github Repo</LinkTextProject>
+                        <LinkTextProject>
+                          Github Repo
+                        </LinkTextProject>
                     </LinkProject>
                     <LinkProject target='_blank' rel="noopener noreferrer" href='http://allthink.info/#/' >
-                        <LinkTextProject>Live Site</LinkTextProject>
+                        <LinkTextProject>
+                          Live Site
+                        </LinkTextProject>
                     </LinkProject>
                 </ProjectButtonHolder>
             </TextButtonHolder>

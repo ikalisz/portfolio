@@ -2,18 +2,30 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <NavBarContainer>
-      <Link to='/'><LinkText>Home</LinkText></Link>
+      <Link to='/'>
+        <LinkText>
+          Home
+        </LinkText>
+      </Link>
       <LineDiv />
-      <Link to='/projects'><LinkText
-      style={{
-        margin: '5 0',
-      }}
-      >Projects</LinkText></Link>
+      <Link to='/projects'>
+        <LinkText
+          style={{
+            margin: '5 0',
+          }}
+        >
+          Projects
+        </LinkText>
+      </Link>
       <LineDiv />
-      <Link to='/about'><LinkText>About</LinkText></Link>
+      <Link to='/about'>
+        <LinkText>
+          About
+        </LinkText>
+      </Link>
     </NavBarContainer>
   )
 }
