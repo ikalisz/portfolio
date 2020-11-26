@@ -11,15 +11,29 @@ import Header from './Components/Header'
 function App(props) {
   return (
     <AppContainer>
-      <Header />
       <RouteContainer>
-        {routes}
+        <Header />
+        <RoutesContainer>
+          {routes}
+        </RoutesContainer>
       </RouteContainer>
     </AppContainer>
   );
 }
 
 const RouteContainer = styled.main`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+`
+
+const RoutesContainer = styled.div`
   height: 80%;
   width: 100%;
   @media (min-width: 1000px) {

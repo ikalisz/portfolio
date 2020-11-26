@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {
+  useState,
+} from 'react'
 import styled from 'styled-components'
 import {
   FontAwesomeIcon,
@@ -6,16 +8,25 @@ import {
 import {
   faCode,
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  Link,
+  Redirect,
+} from 'react-router-dom'
 import Navbar from '../Navbar'
 
 function Header(props) {
+
   return (
     <HeaderBar>
-      <IconSpan
-        onClick={e => props.history.push('/')}
+      <a
+        href="/"
       >
-        <FontAwesomeIcon icon={faCode} size='4x' />
-      </IconSpan>
+        <IconSpan
+          onClick={e => console.log(props)}
+        >
+          <FontAwesomeIcon icon={faCode} size='4x' />
+        </IconSpan>
+      </a>
       <NameText>
         Ian K
       </NameText>
@@ -57,4 +68,8 @@ const IconSpan = styled.span`
 const NameText = styled.p`
   font-size: 40px;
   color: white;
+`
+
+const CodeIcon = styled(FontAwesomeIcon)`
+  
 `
