@@ -14,19 +14,9 @@ import {
 } from 'react-router-dom'
 import Navbar from '../Navbar'
 
-function Header(props) {
-
+function Header() {
   return (
     <HeaderBar>
-      <a
-        href="/"
-      >
-        <IconSpan
-          onClick={e => console.log(props)}
-        >
-          <FontAwesomeIcon icon={faCode} size='4x' />
-        </IconSpan>
-      </a>
       <NameText>
         Ian K
       </NameText>
@@ -68,8 +58,4 @@ const IconSpan = styled.span`
 const NameText = styled.p`
   font-size: 40px;
   color: white;
-`
-
-const CodeIcon = styled(FontAwesomeIcon)`
-  
 `
